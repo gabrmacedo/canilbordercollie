@@ -1,0 +1,68 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="overlayGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#0F172A" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.1" />
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="collieCoat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo com gradiente sutil de estúdio / campo verdejante -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+
+  <!-- Elementos decorativos de ambiente -->
+  <circle cx="640" cy="150" r="224" fill="#FFFFFF" opacity="0.06" />
+  <circle cx="120" cy="480" r="160" fill="#0D9488" opacity="0.08" />
+
+  <!-- Ilustração Artística de Border Collie ou Estrutura -->
+  <g transform="translate(260, 150)" filter="drop-shadow(0 15px 25px rgba(0,0,0,0.25))">
+    <!-- Base / Colina verde ou pedestal -->
+    <ellipse cx="140" cy="220" rx="130" ry="18" fill="#000000" opacity="0.15" />
+    
+    <!-- Silhueta estilizada do Border Collie / Ícone Central -->
+    <path d="M70 210 C75 160 90 130 115 120 C125 115 145 112 160 118 C185 128 200 160 210 210 Z" fill="#FFFFFF" />
+    <path d="M95 125 C88 95 98 60 112 35 C118 28 126 32 126 42 C126 55 129 68 135 75 C141 68 152 45 158 35 C164 28 170 32 170 42 C170 58 165 78 170 88 C182 98 192 110 195 130 C178 115 160 108 142 110 C125 112 108 120 95 125 Z" fill="#1E293B" />
+    <path d="M128 75 C134 65 144 65 150 75 C154 82 150 95 148 108 C142 112 136 112 132 108 C128 95 124 82 128 75 Z" fill="#FFFFFF" />
+    <ellipse cx="139" cy="108" rx="7" ry="5" fill="#0F172A" />
+    <ellipse cx="123" cy="85" rx="3" ry="4" fill="#D97706" />
+    <ellipse cx="155" cy="85" rx="3" ry="4" fill="#D97706" />
+    <polygon points="139,135 143,143 151,143 145,149 147,157 139,152 131,157 133,149 127,143 135,143" fill="url(#goldAcc)" />
+  </g>
+
+  <!-- Overlay para leitura de texto em alta legibilidade -->
+  <rect width="800" height="600" fill="url(#overlayGrad)" />
+
+  <!-- Badge Flutuante no Topo -->
+  <g transform="translate(30, 30)">
+    <rect width="140" height="32" rx="16" fill="#6366F1" />
+    <text x="70" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+      PADREADOR
+    </text>
+  </g>
+
+  <!-- Informações Inferiores do Card -->
+  <g transform="translate(30, 555 )">
+    <text x="0" y="-35" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">
+      Zeus Blue Lightning
+    </text>
+    <text x="0" y="-12" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#94A3B8">
+      Campeão de Agility Grau 3 • Padreador
+    </text>
+    <text x="0" y="8" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#14B8A6">
+      Linhagem Australiana de Esporte &bull; Laudos 100% Negativos
+    </text>
+  </g>
+</svg>

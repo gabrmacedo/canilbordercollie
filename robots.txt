@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://www.canilborderplace.com.br/sitemap.xml

@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco | Contato e Atendimento | Canil Border Place</title>
+  <meta name="description" content="Entre em contato com o Canil Border Place. Atendimento direto pelo WhatsApp, dúvidas sobre ninhadas, agendamento de chamadas de vídeo e envios para todo o Brasil.">
+  <meta name="keywords" content="Contato Canil Border Collie, WhatsApp Canil Border Place, Endereço Canil, Envio de filhotes aéreo, Dúvidas Border Collie">
+  <meta name="author" content="Canil Border Place">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato e Atendimento | Canil Border Place">
+  <meta property="og:description" content="Fale diretamente com nosso criador. Atendimento via WhatsApp, e-mail e informações sobre transporte e reservas.">
+  <meta property="og:image" content="./assets/images/hero-dog.jpg">
+  <meta property="og:url" content="https://www.canilborderplace.com.br/contato.html">
+
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="alternate icon" href="./favicon.ico">
+
+  <!-- Google Fonts: Fredoka & Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+  <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+  <main>
+    <!-- TOPO DE CONTATO -->
+    <section class="section" style="background: linear-gradient(180deg, #F3ECE3 0%, #FAF7F2 100%);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Estamos por Aqui</span>
+          <h1 class="section-title">Fale com o Canil Border Place</h1>
+          <p class="section-desc">
+            Adoramos conversar sobre os cães! Mande uma mensagem pelo WhatsApp para tirar dúvidas sobre ninhadas, agendar uma chamada de vídeo ou cotar o envio para sua cidade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREA DE CONTATO & FORMULÁRIO -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Informações de Atendimento -->
+          <div class="contact-info-card">
+            <h3>Canais de Atendimento</h3>
+            <p>
+              Respondemos com muito carinho no WhatsApp para entender o que você procura e apresentar nossos filhotes.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-item">
+                <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="22" height="22">
+                <div>
+                  <strong>WhatsApp Direto:</strong>
+                  <br>
+                  <a href="https://wa.me/+5527998886460" target="_blank" rel="noopener noreferrer" style="color: #F8B179; font-weight: 700;">
+                    (27) 99888-6460
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <img src="./assets/icons/instagram.svg" alt="" class="icon" width="22" height="22">
+                <div>
+                  <strong>Instagram Oficial:</strong>
+                  <br>
+                  <a href="https://instagram.com/canilborderplace" target="_blank" rel="noopener noreferrer" style="color: #F8B179; font-weight: 700;">
+                    @canilborderplace
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <img src="./assets/icons/clock.svg" alt="" class="icon" width="22" height="22">
+                <div>
+                  <strong>Horário de Atendimento:</strong>
+                  <br>
+                  <span>Segunda a Sábado: das 09h às 17h</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Formulário Inteligente de Interesse -->
+          <div class="contact-form-card">
+            <h2 style="font-size: var(--font-size-xl); margin-bottom: var(--space-xs);">Mande uma Mensagem</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-muted); margin-bottom: var(--space-md);">
+              Preencha os dados abaixo e clique no botão para abrir uma conversa formatada no WhatsApp:
+            </p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="nome" class="form-label">Seu Nome Completo *</label>
+                <input type="text" id="nome" name="nome" class="form-input" placeholder="Ex: Ana Clara Souza" required>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label for="cidade" class="form-label">Sua Cidade / UF *</label>
+                  <input type="text" id="cidade" name="cidade" class="form-input" placeholder="Ex: Curitiba / PR" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="telefone" class="form-label">Seu WhatsApp *</label>
+                  <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="Ex: (11) 98765-4321" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="interesse" class="form-label">Finalidade Principal</label>
+                <select id="interesse" name="interesse" class="form-select">
+                  <option value="Companhia e Família">Cão de Companhia / Família com Crianças</option>
+                  <option value="Esporte e Agility">Esporte Canino / Agility / Canicross</option>
+                  <option value="Pastoreio e Trabalho">Trabalho Rural / Pastoreio</option>
+                  <option value="Dúvida Geral">Tirar dúvidas sobre ninhadas futuras</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem" class="form-label">Preferência de Cor, Sexo ou Dúvidas</label>
+                <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Conte se tem preferência por macho ou fêmea, cor (Blue Merle, Preto e Branco, Chocolate), se mora em casa ou apartamento, etc."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-whatsapp btn-lg btn-full" 
+  style="margin-top: 0.5rem; 
+         padding: 0.75rem 1.4rem;
+         font-size: var(--font-size-sm);">
+  <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="20" height="20">
+  Iniciar Conversa no WhatsApp
+</button>
+
+              <div id="formResponse" style="display: none;"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (PERGUNTAS FREQUENTES) -->
+    <section id="faq" class="section section-alt" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">Tire Suas Dúvidas</span>
+          <h2 id="faq-heading" class="section-title">Perguntas Frequentes (FAQ)</h2>
+          <p class="section-desc">Reunimos as respostas para as dúvidas mais comuns de quem quer adotar um Border Collie.</p>
+        </header>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Com quantos dias posso receber meu filhote?</span>
+              <img src="./assets/icons/chevron-down.svg" alt="" class="icon" width="20" height="20">
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Liberamos os filhotes somente a partir dos 60 dias de vida. Esse prazo é indispensável para o desmame natural, a socialização com a mãe e irmãos (que ensina a inibição de mordida) e a imunização com a primeira dose de vacina V10 importada e microchip.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>O Border Collie pode morar em apartamento?</span>
+              <img src="./assets/icons/chevron-down.svg" alt="" class="icon" width="20" height="20">
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Sim, vive perfeitamente bem! O segredo do Border Collie é o gasto mental: brincadeiras de farejar, brinquedos recheáveis, comandos de obediência e passeios diários de qualidade. Nossos filhotes passam por estimulação precoce (Bio Sensor), o que desenvolve excelente equilíbrio e tranquilidade dentro de casa.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Quais documentos acompanham o filhote?</span>
+              <img src="./assets/icons/chevron-down.svg" alt="" class="icon" width="20" height="20">
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Cada filhote é entregue com: Certificado de Pedigree CBKC / FCI, Carteira de Vacinação assinada por médico veterinário, Certificado de Microchipagem, Contrato de Compra com garantia de saúde contra doenças genéticas e virais, e orientações de cuidados iniciais.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Os pais possuem exames de displasia e DNA negativos?</span>
+              <img src="./assets/icons/chevron-down.svg" alt="" class="icon" width="20" height="20">
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Sim! Todos os nossos padreadores e matrizes possuem radiografias oficiais livres de displasia coxofemoral (HD-A) e de cotovelo (ED-0), além de painel de DNA negativo para CEA, CL, TNS e sensibilidade medicamentosa MDR1. Compartilhamos com alegria a cópia dos laudos!
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo-link" aria-label="Canil Border Place - Início">
+        <img
+          src="./assets/logo/logo.png"
+          alt="Canil Border Place"
+          class="logo-img"
+          width="72"
+          height="72"
+        >
+      </a>
+          <p style="margin-top: 0.75rem;">
+            Criação familiar e ética de Border Collie. Genética comprovada, cães saudáveis e amor incondicional.
+          </p>
+          <div class="social-links" style="margin-top: 1rem;">
+            <a href="https://wa.me/+5527998886460" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nosso WhatsApp">
+              <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="20" height="20">
+            </a>
+            <a href="https://www.instagram.com/canil_border_place/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nosso Instagram">
+              <img src="./assets/icons/instagram.svg" alt="" class="icon" width="20" height="20">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Página Inicial</a></li>
+            <li><a href="./filhotes.html">Filhotes Disponíveis</a></li>
+            <li><a href="./plantel.html">Nosso Plantel</a></li>
+            <li><a href="./o-canil.html">Sobre o Canil</a></li>
+            <li><a href="./contato.html">Fale Conosco</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Diferenciais</h4>
+          <ul class="footer-links">
+            <li><a href="./plantel.html#laudos">Laudos de Saúde &amp; DNA</a></li>
+            <li><a href="./filhotes.html#como-funciona">Processo de Reserva</a></li>
+            <li><a href="./o-canil.html#estrutura">Nossa Estrutura</a></li>
+            <li><a href="./contato.html#faq">Perguntas Frequentes (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Atendimento</h4>
+          <ul class="footer-links">
+            <li><span>WhatsApp: (27)99888-6460</span></li>
+            <li><span>Instagram: @canil_border_place</span></li>
+            <li><span>Envios: Para alguns Estados Brasileiro</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Canil Border Place. Todos os direitos reservados. Registro CBKC / FCI.</p>
+        <p>Criação ética, responsável e amorosa de Border Collie.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/+5527998886460?text=Ol%C3%A1!%20Estou%20na%20p%C3%A1gina%20de%20contato%20do%20Canil%20Border%20Place%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Falar no WhatsApp com o Canil Border Place">
+    <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="32" height="32">
+  </a>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+</html>
