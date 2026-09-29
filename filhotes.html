@@ -44,7 +44,6 @@
         <!-- FILTROS INTERATIVOS -->
         <div class="filter-container" role="toolbar" aria-label="Filtrar filhotes por categoria e status">
           <button type="button" class="filter-btn active" data-filter="all">Todos os Filhotes</button>
-          <button type="button" class="filter-btn" data-filter="disponivel">Disponíveis</button>
           <button type="button" class="filter-btn" data-filter="macho">Machos</button>
           <button type="button" class="filter-btn" data-filter="femea">Fêmeas</button>
         </div>
@@ -56,125 +55,412 @@
       <div class="container">
         <div class="cards-grid">
 
-          <!-- Card 1: Macho Preto e Branco (Foto Real) -->
-          <article class="puppy-card" data-category="macho preto-branco" data-status="disponivel">
-            <div class="card-media">
-              <span class="badge badge-success card-badge">Disponível</span>
-              <img src="./assets/images/filhote-01.jpg" alt="Filhote macho Thor - Border Collie Preto e Branco" width="614" height="1024" loading="lazy">
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span>Nasc: 15/07/2026</span>
-                <span>Macho</span>
-              </div>
-              <h2 class="card-title">Thor (Macho)</h2>
-              <div class="dog-details-list">
-                <div class="dog-detail-item"><strong>Cor:</strong> Preto e Branco clássico</div>
-                <div class="dog-detail-item"><strong>Pais:</strong> Janny x Gucci</div>
-                <div class="dog-detail-item"><strong>Personalidade:</strong> Curioso</div>
-                <div class="dog-detail-item"><strong>Incluso:</strong> Microchip, 1ª Dose V10 e Pedigree CBKC</div>
-              </div>
-              <div class="card-footer">
-                <button type="button" 
-                        class="btn btn-whatsapp btn-full btn-reserve-puppy"
-                        data-puppy-name="Thor" 
-                        data-puppy-color="Preto e Branco">
-                  <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="18" height="18">
-                  Quero Reservar o Thor
-                </button>
-              </div>
-            </div>
-          </article>
+          <!-- Filhote 1 -->
+  <article
+    class="puppy-card"
+    data-category="macho preto-branco"
+    data-status="disponivel"
+  >
 
-          <!-- Card 2: Fêmea Preto e Branco (Foto Real) -->
-          <article class="puppy-card" data-category="femea preto-branco" data-status="disponivel">
-            <div class="card-media">
-              <span class="badge badge-success card-badge">Disponível</span>
-              <img src="./assets/images/filhote-02.jpg" alt="Filhote fêmea Bela - Border Collie" width="468" height="1024" loading="lazy">
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span>Nasc: 15/07/2026</span>
-                <span>Fêmea</span>
-              </div>
-              <h2 class="card-title">Bela (Fêmea)</h2>
-              <div class="dog-details-list">
-                <div class="dog-detail-item"><strong>Cor:</strong> Preto e Branco peludinha</div>
-                <div class="dog-detail-item"><strong>Pais:</strong> Ayla x Gucci</div>
-                <div class="dog-detail-item"><strong>Personalidade:</strong>amorosa</div>
-                <div class="dog-detail-item"><strong>Incluso:</strong> Microchip, 1ª Dose V10 e Pedigree CBKC</div>
-              </div>
-              <div class="card-footer">
-                <button type="button" 
-                        class="btn btn-whatsapp btn-full btn-reserve-puppy"
-                        data-puppy-name="Bela" 
-                        data-puppy-color="Preto e Branco">
-                  <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="18" height="18">
-                  Quero Reservar a Bela
-                </button>
-              </div>
-            </div>
-          </article>
+    <div class="card-media">
+      <span class="badge badge-success card-badge">Disponível</span>
 
-          <!-- Card 3: Macho Blue Merle (Foto Real) -->
-          <article class="puppy-card" data-category="macho blue-merle" data-status="reservado">
-            <div class="card-media">
-              <span class="badge badge-success card-badge">Disponível</span>
-              <img src="./assets/images/filhote-02.jpg" alt="Filhote fêmea Bela - Border Collie" width="468" height="1024" loading="lazy">
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span>Nasc: 02/08/2026</span>
-                <span>Macho</span>
-              </div>
-              <h2 class="card-title">Bob (Macho)</h2>
-              <div class="dog-details-list">
-                <div class="dog-detail-item"><strong>Cor:</strong> Blue Merle com Olhos Azuis</div>
-                <div class="dog-detail-item"><strong>Pais:</strong> Ayla x Gucci</div>
-                <div class="dog-detail-item"><strong>Personalidade:</strong> Atento</div>
-                <div class="dog-detail-item"><strong>Incluso:</strong> Microchip, 1ª Dose V10 e Pedigree CBKC</div>
-              </div>
-              <div class="card-footer">
-                <button type="button" 
-                        class="btn btn-whatsapp btn-full btn-reserve-puppy"
-                        data-puppy-name="Bela" 
-                        data-puppy-color="Preto e Branco">
-                  <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="18" height="18">
-                  Quero Reservar a Bela
-                </button>
-              </div>
-            </div>
-          </article>
+      <img
+        src="./assets/images/filhote-01.jpg"
+        alt="Filhote Border Collie Preto e Branco"
+        width="614"
+        height="1024"
+        loading="lazy"
+      >
+    </div>
 
-          <!-- Card 4: Fêmea Chocolate e Branco (Foto Real) -->
-          <article class="puppy-card" data-category="femea chocolate" data-status="disponivel">
-            <div class="card-media">
-              <span class="badge badge-success card-badge">Disponível</span>
-              <img src="./assets/images/filhote-04.jpg" alt="Filhote fêmea Mel - Border Collie Chocolate e Branco" width="764" height="1024" loading="lazy">
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span>Nasc: 02/08/2026</span>
-                <span>Fêmea</span>
-              </div>
-              <h2 class="card-title">Mel (Fêmea)</h2>
-              <div class="dog-details-list">
-                <div class="dog-detail-item"><strong>Cor:</strong> Chocolate e Branco</div>
-                <div class="dog-detail-item"><strong>Pais:</strong> Zeus x Safira</div>
-                <div class="dog-detail-item"><strong>Personalidade:</strong> Doce, calma e muito companheira</div>
-                <div class="dog-detail-item"><strong>Incluso:</strong> Microchip, 1ª Dose V10 e Pedigree CBKC</div>
-              </div>
-              <div class="card-footer">
-                <button type="button" 
-                        class="btn btn-whatsapp btn-full btn-reserve-puppy"
-                        data-puppy-name="Mel" 
-                        data-puppy-color="Chocolate e Branco">
-                  <img src="./assets/icons/whatsapp.svg" alt="" class="icon" width="18" height="18">
-                  Quero Reservar a Mel
-                </button>
-              </div>
-            </div>
-          </article>
+    <div class="card-body">
+
+      <div class="card-meta">
+        <span>Nascimento: 15/07/2026</span>
+        <span>Macho</span>
+      </div>
+
+      <!-- Sem nome do filhote -->
+      <h3 class="card-title">Border Collie </h3>
+
+      <div class="dog-details-list">
+
+        <div class="dog-detail-item">
+          <strong>Pelagem:</strong>Preto e Branco 
+        </div>
+
+        <div class="dog-detail-item">
+          <strong>Temperamento:</strong> Atento
+        </div>
+
+        <div class="dog-detail-item">
+          <strong>Saúde:</strong> Microchip + 1ª dose da V10 importada
+        </div>
+
+        <div class="dog-detail-item">
+          <strong>Entrega:</strong> A partir de 60 dias, vermifugado, vacinado, microchipado e com pedigree CBKC
+        </div>
+
+      </div>
+
+      <div class="card-footer">
+
+        <button
+          type="button"
+          class="btn btn-whatsapp btn-full btn-reserve-puppy"
+          data-puppy-color="Preto e Branco"
+        >
+          <img
+            src="./assets/icons/whatsapp.svg"
+            alt=""
+            class="icon"
+            width="18"
+            height="18"
+          >
+          Quero este filhote
+        </button>
+
+      </div>
+
+    </div>
+
+  </article>
+
+          <!-- Filhote 2 -->
+<article class="puppy-card" data-category="femea preto-branco" data-status="disponivel">
+
+  <div class="card-media">
+    <span class="badge badge-success card-badge">Disponível</span>
+
+    <img
+      src="./assets/images/femea.png"
+      alt="Filhote Border Collie Preto e Branco"
+      width="468"
+      height="1024"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="card-body">
+
+    <div class="card-meta">
+      <span>Nascimento: 15/07/2026</span>
+      <span>Fêmea</span>
+    </div>
+
+    <h3 class="card-title">Border Collie</h3>
+
+    <div class="dog-details-list">
+
+      <div class="dog-detail-item">
+        <strong>Pelagem:</strong> Preto e Branco com colar cheio
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Temperamento:</strong> Calmo
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Saúde:</strong> Microchip + 1ª dose da V10 importada
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Entrega:</strong> A partir de 60 dias, vermifugado, vacinado, microchipado e com pedigree CBKC
+      </div>
+
+    </div>
+
+    <div class="card-footer">
+
+      <button
+        type="button"
+        class="btn btn-whatsapp btn-full btn-reserve-puppy"
+        data-puppy-color="Preto e Branco"
+      >
+        <img
+          src="./assets/icons/whatsapp.svg"
+          alt=""
+          class="icon"
+          width="18"
+          height="18"
+        >
+        Quero este filhote
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+          <!-- Filhote 3 -->
+<article class="puppy-card" data-category="macho blue-merle" data-status="disponivel">
+
+  <div class="card-media">
+    <span class="badge badge-success card-badge">Disponível</span>
+
+    <img
+      src="./assets/images/macho.png"
+      alt="Filhote Border Collie Blue Merle"
+      width="468"
+      height="1024"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="card-body">
+
+    <div class="card-meta">
+      <span>Nascimento: 02/08/2026</span>
+      <span>Macho</span>
+    </div>
+
+    <h3 class="card-title">Border Collie</h3>
+
+    <div class="dog-details-list">
+
+      <div class="dog-detail-item">
+        <strong>Pelagem:</strong> Blue Merle
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Temperamento:</strong> Observador
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Saúde:</strong> Microchip + 1ª dose da V10 importada
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Entrega:</strong> A partir de 60 dias, vermifugado, vacinado, microchipado e com pedigree CBKC
+      </div>
+
+    </div>
+
+    <div class="card-footer">
+
+      <button
+        type="button"
+        class="btn btn-whatsapp btn-full btn-reserve-puppy"
+        data-puppy-color="Blue Merle"
+      >
+        <img
+          src="./assets/icons/whatsapp.svg"
+          alt=""
+          class="icon"
+          width="18"
+          height="18"
+        >
+        Quero este filhote
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+<!-- Filhote 4 -->
+<article class="puppy-card" data-category="femea preto-branco" data-status="disponivel">
+
+  <div class="card-media">
+    <span class="badge badge-success card-badge">Disponível</span>
+
+    <img
+      src="./assets/images/filhote-02.jpg"
+      alt="Filhote Border Collie Preto e Branco"
+      width="468"
+      height="1024"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="card-body">
+
+    <div class="card-meta">
+      <span>Nascimento: 15/07/2026</span>
+      <span>Fêmea</span>
+    </div>
+
+    <h3 class="card-title">Border Collie</h3>
+
+    <div class="dog-details-list">
+
+      <div class="dog-detail-item">
+        <strong>Pelagem:</strong> Preto e Branco
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Temperamento:</strong> Brincalhona
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Saúde:</strong> Microchip + 1ª dose da V10 importada
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Entrega:</strong> A partir de 60 dias, vermifugado, vacinado, microchipado e com pedigree CBKC
+      </div>
+
+    </div>
+
+    <div class="card-footer">
+
+      <button
+        type="button"
+        class="btn btn-whatsapp btn-full btn-reserve-puppy"
+        data-puppy-color="Preto e Branco"
+      >
+        <img
+          src="./assets/icons/whatsapp.svg"
+          alt=""
+          class="icon"
+          width="18"
+          height="18"
+        >
+        Quero este filhote
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+<!-- Filhote 5 -->
+<article class="puppy-card" data-category="macho blue-merle" data-status="disponivel">
+
+  <div class="card-media">
+    <span class="badge badge-success card-badge">Disponível</span>
+
+    <img
+      src="./assets/images/filhote-03.jpg"
+      alt="Filhote Border Collie Blue Merle"
+      width="468"
+      height="1024"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="card-body">
+
+    <div class="card-meta">
+      <span>Nascimento: 02/08/2026</span>
+      <span>Macho</span>
+    </div>
+
+    <h3 class="card-title">Border Collie</h3>
+
+    <div class="dog-details-list">
+
+      <div class="dog-detail-item">
+        <strong>Pelagem:</strong> Blue Merle
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Temperamento:</strong> Calmo
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Saúde:</strong> Microchip + 1ª dose da V10 importada
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Entrega:</strong> A partir de 60 dias, vermifugado, vacinado, microchipado e com pedigree CBKC
+      </div>
+
+    </div>
+
+    <div class="card-footer">
+
+      <button
+        type="button"
+        class="btn btn-whatsapp btn-full btn-reserve-puppy"
+        data-puppy-color="Blue Merle"
+      >
+        <img
+          src="./assets/icons/whatsapp.svg"
+          alt=""
+          class="icon"
+          width="18"
+          height="18"
+        >
+        Quero este filhote
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+          <!-- Filhote 6 -->
+<article class="puppy-card" data-category="macho chocolate" data-status="disponivel">
+
+  <div class="card-media">
+    <span class="badge badge-success card-badge">Disponível</span>
+
+    <img
+      src="./assets/images/filhote-04.jpg"
+      alt="Filhote Border Collie Chocolate e Branco"
+      width="764"
+      height="1024"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="card-body">
+
+    <div class="card-meta">
+      <span>Nascimento: 02/08/2026</span>
+      <span>Macho</span>
+    </div>
+
+    <h3 class="card-title">Border Collie</h3>
+
+    <div class="dog-details-list">
+
+      <div class="dog-detail-item">
+        <strong>Pelagem:</strong> Marrom e Branco
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Temperamento:</strong> Carinhoso
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Saúde:</strong> Microchip + 1ª dose da V10 importada
+      </div>
+
+      <div class="dog-detail-item">
+        <strong>Entrega:</strong> A partir de 60 dias, vermifugado, vacinado, microchipado e com pedigree CBKC
+      </div>
+
+    </div>
+
+    <div class="card-footer">
+
+      <button
+        type="button"
+        class="btn btn-whatsapp btn-full btn-reserve-puppy"
+        data-puppy-color="Chocolate e Branco"
+      >
+        <img
+          src="./assets/icons/whatsapp.svg"
+          alt=""
+          class="icon"
+          width="18"
+          height="18"
+        >
+        Quero este filhote
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
 
         </div>
       </div>
@@ -211,7 +497,7 @@
           <div class="step-card">
             <div class="step-number">4</div>
             <h3>Entrega Feliz</h3>
-            <p>Retirada no canil ou envio aéreo seguro para seu estado a partir dos 60 dias, com pedigree, microchip e vacinas.</p>
+            <p>Retirada no canil ou envio seguro para seu estado a partir dos 60 dias, com pedigree, microchip e vacinas.</p>
           </div>
         </div>
 
@@ -229,7 +515,7 @@
   </main>
 
   <!-- ================= RODAPÉ ================= -->
-  <<!-- ================= RODAPÉ ================= -->
+  <!-- ================= RODAPÉ ================= -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
