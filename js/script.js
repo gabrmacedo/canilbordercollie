@@ -235,3 +235,88 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const photos = document.querySelectorAll(".mural-photo");
+  const lightbox = document.getElementById("muralLightbox");
+  const lightboxImage = document.getElementById("muralLightboxImage");
+  const closeButton = document.getElementById("muralLightboxClose");
+
+  if (!photos.length || !lightbox || !lightboxImage) return;
+
+
+  /* ==========================================
+     ABRIR FOTO
+  ========================================== */
+
+  photos.forEach((photo) => {
+
+    photo.addEventListener("click", () => {
+
+      const image = photo.dataset.image;
+
+      if (!image) return;
+
+      lightboxImage.src = image;
+
+      lightbox.classList.add("active");
+
+      lightbox.setAttribute("aria-hidden", "false");
+
+      document.body.style.overflow = "hidden";
+
+    });
+
+  });
+
+
+  /* ==========================================
+     FECHAR
+  ========================================== */
+
+  function closeLightbox() {
+
+    lightbox.classList.remove("active");
+
+    lightbox.setAttribute("aria-hidden", "true");
+
+    document.body.style.overflow = "";
+
+    setTimeout(() => {
+      lightboxImage.src = "";
+    }, 350);
+
+  }
+
+
+  closeButton.addEventListener("click", closeLightbox);
+
+
+  /* ==========================================
+     CLICAR FORA DA FOTO
+  ========================================== */
+
+  lightbox.addEventListener("click", (event) => {
+
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+
+  });
+
+
+  /* ==========================================
+     ESC PARA FECHAR
+  ========================================== */
+
+  document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox();
+    }
+
+  });
+
+});
+</script>
