@@ -1608,9 +1608,9 @@ p:last-child {
 .dog-details-list {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.75rem;
   margin-block: var(--space-xs);
-  padding: 0.85rem;
+  padding: 1rem;
   background-color: var(--color-secondary-light);
   border-radius: var(--radius-md);
   font-size: var(--font-size-xs);
@@ -1618,9 +1618,16 @@ p:last-child {
 
 .dog-detail-item {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.55rem;
   color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+.dog-detail-item strong {
+  color: var(--color-primary);
+  min-width: 85px;
+  flex-shrink: 0;
 }
 
 .dog-detail-item strong {
@@ -1633,6 +1640,160 @@ p:last-child {
   padding-top: var(--space-xs);
 }
 
+/* =========================================================
+   ALINHAMENTO DOS CARDS DE FILHOTES
+   ========================================================= */
+
+.puppy-card {
+  height: 100%;
+}
+
+.puppy-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Preço */
+.puppy-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 105px;
+
+  margin: 0.5rem 0 0.25rem;
+  padding: 0.75rem 1rem;
+
+  background: linear-gradient(
+    135deg,
+    #fff5ee 0%,
+    #f8e5d8 100%
+  );
+
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--radius-md);
+
+  text-align: center;
+}
+
+.puppy-price-label {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.puppy-price-value {
+  display: block;
+
+  margin: 0.1rem 0;
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+
+  color: var(--color-primary);
+}
+
+.puppy-price-note {
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: var(--color-muted);
+}
+
+/* Informações do filhote */
+.puppy-card .dog-details-list {
+  min-height: 190px;
+  margin-top: 0.75rem;
+}
+
+/* Mantém os textos organizados */
+.puppy-card .dog-detail-item {
+  align-items: flex-start;
+  line-height: 1.45;
+}
+
+/* Botão sempre no mesmo nível dentro do card */
+.puppy-card .card-footer {
+  margin-top: auto;
+  padding-top: var(--space-sm);
+}
+/* =========================================================
+   AJUSTE DOS CARDS DE FILHOTES
+   ========================================================= */
+
+/* Evita que Temperamento/Saúde fiquem apertados */
+.dog-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.45;
+}
+
+/* Mantém os títulos alinhados */
+.dog-detail-item strong {
+  color: var(--color-primary);
+  min-width: 85px;
+  flex-shrink: 0;
+}
+
+/* Destaque para o preço */
+.puppy-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0.75rem 0 0.5rem;
+  padding: 0.85rem 1rem;
+
+  background: linear-gradient(
+    135deg,
+    #fff5ee 0%,
+    #f8e5d8 100%
+  );
+
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--radius-md);
+
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(167, 102, 65, 0.12);
+}
+
+.puppy-price-label {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.puppy-price-value {
+  display: block;
+  margin-top: 0.1rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+
+  color: var(--color-primary);
+}
+
+.puppy-price-note {
+  margin-top: 0.35rem;
+
+  font-size: var(--font-size-xs);
+  line-height: 1.35;
+
+  color: var(--color-muted);
+}
 /* --------------------------------------------------------------------------
    9. FILTROS DA PÁGINA FILHOTES
    -------------------------------------------------------------------------- */
