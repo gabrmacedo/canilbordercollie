@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-<script>
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const photos = document.querySelectorAll(".mural-photo");
@@ -319,4 +319,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
-</script>
