@@ -2378,3 +2378,11 @@ p:last-child {
   object-fit: cover;
   object-position: center;
 }
+.dog-card .card-media {
+  aspect-ratio: 4 / 4.8;
+}
+
+.dog-card .card-media img {
+  object-fit: cover;
+  object-position: center;
+}
